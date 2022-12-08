@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>LLC|FORM</title>
+        <link rel="icon"  type="image/x-icon" href="C:\Users\LALITH\Downloads\HTML FILES\form.png">
+        <style>
+            a:link,a:hover,a:active,a:visited,a:focus{
+                display:inline-block;
+                background-color: brown;
+                padding: 12px 10px;
+                text-align:center;
+                color: white;
+            }
+            .page-print{
+                margin:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid p-3 bg-primary"> 
+            <h1> <center>ONLINE STUDENT APPLICTION FORM</center></h1>
+        </div><br>
+            <div class="container">
+            <div class="form">
+             <form method="post">
+                <div class="form-group">
+                    <label for="uname">Applicant name:</label>
+                    <input type="text" class="form-control" id="uname" name="uname" maxlength="15" maxsize="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Enter Date of Birth:</label>
+                    <input type="Date" class="form-control" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                  <label for="mon">Applicant's Mother Name:</label>
+                  <input type="text" class="form-control" id="mon" name="mon" maxlength="15"  minlength="10" maxsize="10" required>
+                </div>
+                <div class="form-group">
+                     <label for="fon">Applicant's Father Name:</label>
+                     <input type="text"class="form-control" id="fon" maxlength="15" maxsize="10"  required>
+                </div>
+                <div class="form-group">
+                    <label for="cphone">Applicant Phone Number:</label>
+                    <input type="tel" class="form-control" id="cphone" name="cphone" pattern="+91 [0-9]{5} [0-9]{5}" required>
+                </div>
+                <div class="form-group">
+                    <label for="egmail">Applicant e-mail address</label>
+                    <input type="email" class="form-control" id="egmail" name="egmail" placeholder="example@email.com" required>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" name="rb" required>Passed PUC with distinction score</label>
+                </div>
+                <div class="form-group">
+                    <label for="drl">Fee Payement Mode</label>
+                    <input id="drl" class="form-control"name="drl" list="mode">
+                    <datalist id="mode">
+                        <option>Cheque</option>
+                        <option>Demand Draft</option>
+                    </datalist>
+                    <h4>Fee to be paid: Rs.7500/- only </h4>
+                </div>
+                <div class="form-group">
+                    <label for="dpr">Class Mode</label>
+                    <input id="dpr" class="form-control" name="dpr" list="clmode">
+                    <datalist id="clmode">
+                        <option>Online</option>
+                        <option>Offline</option>
+                    </datalist>
+                </div>
+                <div>
+                <button type="submit" class="btn btn-success" onclick="success('Form submission succesful')">Submit</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
+                <button type="submit" class="btn btn-warning">Pay Fees</button><br>
+                <div class="page-print">
+                <a href="#" class="print_link" onclick="window.print()">Print this page &nbsp;<i class="fa fa-print"></i></a>
+                </div>
+                </div>
+             </form>
+            </div>
+            </div>
+    </body>
+</html>

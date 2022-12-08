@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<htmL lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>YOUR PROGRESS GRAPH</title>
+        <style>
+            .label{
+                border: 3px;
+                margin: 10px;
+                padding: 10px;
+                text-align: center;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: large;
+                font-weight: bolder;
+                
+            }
+            .English{
+                display: flex;
+                justify-content: flex-start;
+                border: 3px;
+                border-radius: 5px;
+                margin: 10px;
+                padding: 10px;
+                flex-direction: column;
+                flex: 1;
+                width: 42%;
+                align-self: center;
+                background-color: mediumspringgreen;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+            .Science{
+                display: flex;
+                border: 3px;
+                border-radius: 5px;
+                margin: 10px;
+                padding: 10px;
+                flex-direction: column;
+                flex: 1;
+                width: 45%;
+                align-self: center;
+                background-color: mediumspringgreen;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+              .Math{
+                display: flex;
+                border: 3px;
+                border-radius: 5px;
+                margin: 10px;
+                padding: 10px;
+                flex-direction: column;
+                flex: 1;
+                width: 35%;
+                align-self: center;
+                background-color: orangered;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: bold;
+              }
+     </style>
+    </head>
+    <body>
+        <div class= "columns">
+            <div class="label">PROGRESS REPORT</div>
+            <div class="container">
+            <div class=" subject English">
+                ENGLISH&nbsp;&nbsp; 92
+            </div>
+            </div>
+            <div class="container">
+            <div class="subject Science" id="sci">SCIENCE &nbsp;&nbsp;95</div>
+            </div>
+            <div class="container">
+            <div class="subject Math" id="math">MATHEMATICS&nbsp;&nbsp; 85</div>
+            </div>
+        </div>
+    </body>
+</htmL>

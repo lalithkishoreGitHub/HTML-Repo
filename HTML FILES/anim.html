@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TRANSIT</title>
+  <style>
+    body{
+      padding: 30px;
+    }
+    .classbox{
+      background-color: orange;
+      width: 50px;
+      height: 50px;
+      animation: myanimation 6s infinite ease-in;
+    }
+    @keyframes myanimation{
+      0%{
+        width: 50px;
+        height: 50px;
+       background-color:orange;
+      }
+      50%{
+        width:100px;
+        height:100px;
+        background-color: purple;
+      }
+      100%{
+        width:200px;
+        height:200px;
+        background-color: yellow;
+      }
+    }
+  </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="classbox"></div>
+  </body>

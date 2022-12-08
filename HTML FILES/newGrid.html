@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADVANCED GRID LAYOUT</title>  
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+        }
+        .segment{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            grid-template-rows: 100px;
+        }
+        .twelve{
+            background-color: aqua;
+            grid-column: 1/span 12;
+        }
+        .ten{
+            background-color: yellow;
+            grid-column: 1/span 10 ;
+        }
+        .eight{
+            background-color: red;
+            grid-column: 1/span 8;
+        }
+        .six{
+            background-color: orange;
+            grid-column: 1/span 6;
+        }
+        .four{
+            background-color: pink;
+            grid-column: 1/span 4;
+        }
+        .two{
+            background-color: yellowgreen;
+            grid-column: 1/span 2;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="parent">
+           <div class="segment twelve"> SPAN 12</div>
+            <div class="segment ten"> SPAN 10</div>
+            <div class="segment eight"> SPAN 8</div>
+            <div class="segment six"> SPAN 6</div>
+            <div class="segment four"> SPAN 4</div>
+            <div class="segment two"> SPAN 2</div>   
+        </div>
+    </body>
